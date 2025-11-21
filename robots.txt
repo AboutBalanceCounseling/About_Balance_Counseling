@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Public microsite – fully indexable
+Sitemap: https://aboutbalancecounseling.github.io/About_Balance_Counseling/sitemap.xml
