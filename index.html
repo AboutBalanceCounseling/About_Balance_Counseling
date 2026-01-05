@@ -57,6 +57,7 @@
   .rss-item a:hover {text-decoration:underline;color:#2B6CB0;}
   .rss-date {font-size:0.85rem;color:#718096;margin:0.25rem 0;}
   .rss-desc {font-size:0.95rem;color:#4A5568;line-height:1.5;}
+  .placeholder-message {font-style:italic;color:#718096;text-align:center;padding:1.5rem 0;font-size:1.1rem;}
 </style>
 
   <!-- Schema.org JSON-LD -->
@@ -237,6 +238,7 @@
 
     <!-- Press Releases Section -->
     <section id="press-feed-section">
+      <h3>Latest Press Releases</h3>
       <div id="press-feed">Loading press releases…</div>
     </section>
 
@@ -275,13 +277,13 @@
         renderFeed(items, 'press-feed', 'Latest Press Releases');
       })
       .catch(() => {
-        // Hide the entire section if no press releases or error
-        document.getElementById('press-feed-section').style.display = 'none';
+        // Show placeholder instead of hiding the section
+        document.getElementById('press-feed').innerHTML = '<p class="placeholder-message">Press Releases coming soon!</p>';
       });
 
     function renderFeed(items, containerId, title) {
       const div = document.getElementById(containerId);
-      let html = `<h3>${title}</h3>`;
+      let html = ''; // title is already in the static <h3> above
       items.forEach(item => {
         const date = new Date(item.pubDate).toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric'});
         const desc = (item.description || '').replace(/<[^>]*>/g, '').substring(0,160) + '…';
