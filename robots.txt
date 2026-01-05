@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aboutbalancecounseling.github.io/about_balance_counseling/sitemap.xml
