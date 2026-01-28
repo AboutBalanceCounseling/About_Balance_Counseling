@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
-<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
-<!--[if IE 8]><html class="preIE9"><![endif]-->
-<!--[if gte IE 9]><!--><html><!--<![endif]-->
+<html>
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>About Balance Counseling | Anxiety & Depression Therapy – Longmont, CO</title>
 
-  <!-- Favicon – replace with real one when you have it -->
+  <!-- Favicon -->
   <link rel="icon" href="https://aboutbalancecounseling.com/wp-content/uploads/about-balance-counseling-avatar.jpg" type="image/png">
   <link rel="apple-touch-icon" href="https://aboutbalancecounseling.com/wp-content/uploads/about-balance-counseling-avatar.jpg">
 
@@ -29,7 +26,7 @@
 
   <link rel="canonical" href="https://aboutbalancecounseling.github.io/about_balance_counseling/">
 
-  <!-- RSS (if he has a blog – otherwise it will gracefully fall back) -->
+  <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="About Balance Counseling Blog" href="https://aboutbalancecounseling.com/feed/">
 
   <style>
@@ -58,7 +55,11 @@
   .rss-date {font-size:0.85rem;color:#718096;margin:0.25rem 0;}
   .rss-desc {font-size:0.95rem;color:#4A5568;line-height:1.5;}
   .placeholder-message {font-style:italic;color:#718096;text-align:center;padding:1.5rem 0;font-size:1.1rem;}
-</style>
+  .testimonial {margin-bottom:1.5rem;padding:1rem;border-left:4px solid #2C5282;background:#F0F4F8;border-radius:6px;}
+  .testimonial p {margin:0.25rem 0;}
+  .testimonial .author {font-weight:600;margin-top:0.5rem;color:#2C5282;}
+  .testimonial .date {font-size:0.85rem;color:#718096;}
+  </style>
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
@@ -99,6 +100,36 @@
           "https://www.facebook.com/people/About-Balance-Counseling-LLC/61552183862833/",
           "https://www.linkedin.com/company/about-balance-counseling-llc/about/",
           "https://pressadvantage.com/i_organization/about-balance-counseling"
+        ],
+        "review": [
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "Derek E."},
+            "datePublished": "2024-07-06",
+            "reviewBody": "David was amazing, he got me in a time of need and really helped me process a lot. I couldn't be more grateful.",
+            "reviewRating": {"@type": "Rating", "ratingValue": 5, "bestRating": 5}
+          },
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "Initials hidden"},
+            "datePublished": "2023-01-01",
+            "reviewBody": "David really understood what I am going through and was confident that we could fix it.",
+            "reviewRating": {"@type": "Rating", "ratingValue": 5, "bestRating": 5}
+          },
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "Initials hidden"},
+            "datePublished": "2024-02-14",
+            "reviewBody": "David saw me in a moment of crisis on very short notice. He was patient and understanding, but also straightforward in his words. It was extremely helpful.",
+            "reviewRating": {"@type": "Rating", "ratingValue": 5, "bestRating": 5}
+          },
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "Eric P."},
+            "datePublished": "2023-12-08",
+            "reviewBody": "Great listener and makes you feel important. Never been to a therapist before and David made me feel like I was talking to a normal person. Highly recommend.",
+            "reviewRating": {"@type": "Rating", "ratingValue": 5, "bestRating": 5}
+          }
         ]
       },
       {
@@ -106,7 +137,7 @@
         "@id": "https://aboutbalancecounseling.github.io/about_balance_counseling/#webpage",
         "url": "https://aboutbalancecounseling.github.io/about_balance_counseling/",
         "name": "About Balance Counseling – Resources & Directions",
-        "isPartOf": { "@id": "https://aboutbalancecounseling.com/#website" }
+        "isPartOf": { "@id": "https://aboutbalancecounseling.com/#organization" }
       }
     ]
   }
@@ -122,14 +153,14 @@
 
   <div class="container">
 
-     <!-- About the Practice -->
+    <!-- About the Practice -->
     <section>
       <h3>About Balance Counseling</h3>
       <p>About Balance Counseling is a Longmont-based therapy practice dedicated to helping people move from feeling overwhelmed, anxious, or stuck to living with calm, confidence, and genuine well-being.</p>
       <p>We combine proven, evidence-based approaches—primarily Cognitive Behavioral Therapy (CBT)—with a warm, collaborative style that makes every client feel heard, respected, and supported from day one.</p>
     </section>
 
-    <!-- What We Do / Approach -->
+    <!-- How We Help -->
     <section>
       <h3>How We Help You Find Balance</h3>
       <p>Our goal is simple: partner with you to identify what’s keeping you off-balance and give you practical, lasting tools to change it. Together we:</p>
@@ -142,7 +173,7 @@
       <p>Sessions are available <strong>in-person in Longmont</strong> or <strong>secure online anywhere in Colorado</strong>—whichever fits your life best.</p>
     </section>
 
-    <!-- Who We Serve + Specialties -->
+    <!-- Who We Serve -->
     <section>
       <h3>Who We Serve</h3>
       <p>We welcome adults, teenagers, and couples of all backgrounds who are ready to feel better. Common areas we specialize in include:</p>
@@ -157,6 +188,7 @@
       <p>No matter what you’re facing, you’ll find a safe, judgment-free space here at About Balance Counseling.</p>
     </section>
 
+    <!-- Office & Map -->
     <section>
       <h3>Visit the Office</h3>
       <p><strong>About Balance Counseling</strong><br>
@@ -165,7 +197,7 @@
       <a href="tel:+17206757016">(720) 675-7016</a></p>
 
       <div class="platform-links">
-        <a href="https://maps.google.com/maps?q=601+S+Bowen+St+Ste+202+Longmont+CO+80501" target="_blank">Google Maps</a><br>
+        <a href="https://maps.google.com/maps?q=601+S+Bowen+St+Ste+202+Longmont+CO+80501" target="_blank">Google Maps</a>
         <a href="https://maps.apple.com/?address=601%20S%20Bowen%20St,Longmont,CO%2080501" target="_blank">Apple Maps</a>
       </div>
 
@@ -174,8 +206,32 @@
       </div>
     </section>
 
-  
+    <!-- Testimonials -->
+    <section>
+      <h3>What Our Clients Say</h3>
+      <div class="testimonial">
+        <p>David was amazing, he got me in a time of need and really helped me process a lot. I couldn't be more grateful.</p>
+        <p class="author">– Derek E.</p>
+        <p class="date">July 6, 2024</p>
+      </div>
+      <div class="testimonial">
+        <p>David really understood what I am going through and was confident that we could fix it.</p>
+        <p class="author">– Initials hidden</p>
+        <p class="date">More than 1 year ago</p>
+      </div>
+      <div class="testimonial">
+        <p>David saw me in a moment of crisis on very short notice. He was patient and understanding, but also straightforward in his words. It was extremely helpful.</p>
+        <p class="author">– Initials hidden</p>
+        <p class="date">February 14, 2024</p>
+      </div>
+      <div class="testimonial">
+        <p>Great listener and makes you feel important. Never been to a therapist before and David made me feel like I was talking to a normal person. Highly recommend.</p>
+        <p class="author">– Eric P.</p>
+        <p class="date">December 8, 2023</p>
+      </div>
+    </section>
 
+    <!-- Online Listings -->
     <section>
       <h3>Find David Online</h3>
       <div class="platform-links">
@@ -202,8 +258,7 @@
       </div>
     </section>
 
-  
-        <!-- All Search Mentions -->
+    <!-- Search Mentions -->
     <section>
       <h3>All About Balance Counseling Mentions Online</h3>
       <div class="platform-links">
@@ -217,13 +272,13 @@
       <h3>Connect on Social Media</h3>
       <p>Stay updated with mental health tips, office news, and community resources:</p>
       <div class="platform-links">
-        <!-- Update these URLs when you have the real profiles -->
         <a href="https://www.facebook.com/people/About-Balance-Counseling-LLC/61552183862833/" target="_blank">Facebook</a><br>
         <a href="https://www.linkedin.com/company/about-balance-counseling-llc/about/">LinkedIn</a><br>
         <a href="https://www.psychologytoday.com/us/therapists/about-balance-counseling-longmont-co/1201317" target="_blank">Psychology Today</a>
       </div>
     </section>
-      <section>
+
+    <section>
       <h3>Connect</h3>
       <div class="platform-links">
         <a href="tel:+17206757016">Call (720) 675-7016</a>
@@ -231,7 +286,7 @@
       </div>
     </section>
 
-    <!-- RSS / Blog Section (falls back gracefully if no feed) -->
+    <!-- RSS / Blog Section -->
     <section>
       <div id="rss-feed">Loading latest insights…</div>
     </section>
@@ -248,9 +303,8 @@
     © <script>document.write(new Date().getFullYear());</script> About Balance Counseling – All rights reserved.
   </footer>
 
-  <!-- RSS + Press Releases Script -->
+  <!-- RSS + Press Script -->
   <script>
-    // Existing Blog RSS
     const BLOG_RSS_URL = 'https://aboutbalancecounseling.com/feed/';
     const BLOG_PROXY_URL = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(BLOG_RSS_URL)}`;
 
@@ -259,13 +313,12 @@
       .then(data => {
         if (data.status !== 'ok' || !data.items) throw new Error();
         const items = data.items.slice(0, 5);
-        renderFeed(items, 'rss-feed', 'Latest Insights from David');
+        renderFeed(items, 'rss-feed');
       })
       .catch(() => {
         document.getElementById('rss-feed').innerHTML = '<p><em>No recent blog posts – visit the <a href="https://aboutbalancecounseling.com/">main site</a> for the latest insights.</em></p>';
       });
 
-    // New Press Releases RSS
     const PRESS_RSS_URL = 'https://app.pressadvantage.com/feeds/channel/about-balance-counseling?organization=about-balance-counseling';
     const PRESS_PROXY_URL = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(PRESS_RSS_URL)}`;
 
@@ -274,16 +327,15 @@
       .then(data => {
         if (data.status !== 'ok' || !data.items || data.items.length === 0) throw new Error();
         const items = data.items.slice(0, 5);
-        renderFeed(items, 'press-feed', 'Latest Press Releases');
+        renderFeed(items, 'press-feed');
       })
       .catch(() => {
-        // Show placeholder instead of hiding the section
         document.getElementById('press-feed').innerHTML = '<p class="placeholder-message">Press Releases coming soon!</p>';
       });
 
-    function renderFeed(items, containerId, title) {
+    function renderFeed(items, containerId) {
       const div = document.getElementById(containerId);
-      let html = ''; // title is already in the static <h3> above
+      let html = '';
       items.forEach(item => {
         const date = new Date(item.pubDate).toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric'});
         const desc = (item.description || '').replace(/<[^>]*>/g, '').substring(0,160) + '…';
